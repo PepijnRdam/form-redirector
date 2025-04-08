@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Redirect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // List of your form URLs
+    const forms = [
+      "https://docs.google.com/forms/d/e/1FAIpQLScc_qvK9b_f2zFrZq7GAIoZoNFpGWtL2fEcQJuylY4qgrh-7Q/viewform",
+      "https://docs.google.com/forms/d/e/1FAIpQLScs9TRVZSvrRUVrsyHZv9qfXg4PE8b6Yd4VMQwciHnGLaL3Sw/viewform?usp=dialog",
+      "https://docs.google.com/forms/d/e/1FAIpQLSdAFEHhHR53BDrnpnz3jZMoKfObqEy_8_0wtNVkkdT_UIc0og/viewform?usp=dialog",
+      "https://docs.google.com/forms/d/e/1FAIpQLSfx48Qrtaq4CNaUL9KEJu2pfADBt0S8HRTcR1fQ13LoZJO76w/viewform?usp=dialog"
+    ];
+
+    // Choose one randomly
+    const randomForm = forms[Math.floor(Math.random() * forms.length)];
+
+    // Redirect
+    window.location.href = randomForm;
+  </script>
+</head>
+<body>
+  <p>Redirecting you to the survey...</p>
+</body>
+</html>
